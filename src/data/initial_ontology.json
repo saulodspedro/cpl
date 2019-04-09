@@ -1,0 +1,389 @@
+{"category_name":"academic_field",
+ "seed_instances":["astronomy","biology","comparative literature","computer science","economics",
+                   "environmental science", "geology","history","linguistics","mathematics","philosophy"],
+ "seed_ctx_pattern":["academic fields such as _","academic fields like _", "academic fields including _"],
+ "mutex_exceptions":["economic_sector"],
+ "promoted_instances":[""],
+ "promoted_patterns":[""]}
+
+{"category_name":"actor",
+ "seed_instances":["catherine zeta-jones","clint eastwood","danny kaye",
+                   "halle berry","jack nicholson","jessica alba",
+                   "jude law","julie andrews","keanu reeves","matt damon",
+                   "natalie portman","nicolas cage","nicole kidman",
+                   "sean connery","tom hanks"],
+ "seed_ctx_pattern":["actors such as _","actors like _", "actors including _"],
+ "mutex_exceptions":["celebrity","athlete"],
+ "promoted_instances":[""],
+ "promoted_patterns":[""]}
+
+{"category_name":"animal",
+ "seed_instances":["ants","crabs","brontosauruses","owls","bees","birds","worms",
+                   "snails","squirrels","whales","wasps","eels","giraffes","rhinos","sharks"],
+ "seed_ctx_pattern":["animals such as _","animals like _", "animals including _"],
+ "mutex_exceptions":[""],
+ "promoted_instances":[""],
+ "promoted_patterns":[""]}
+
+{"category_name":"athlete",
+ "seed_instances":["alex rodriguez","andre agassi","brett favre","carlos zambrano",
+                   "david beckham","deron williams","dwayne wade","eli manning",
+                   "evander holyfield","jason giambi","kerry wood","kevin garnett",
+                   "kurt warner","lebron james","lennox lewis"],
+ "seed_ctx_pattern":["athletes such as _","athletes like _", "athletes including _"],
+ "mutex_exceptions":["celebrity", "actor", "coach"],
+ "promoted_instances":[""],
+ "promoted_patterns":[""]}
+
+{"category_name":"award_trophy_tournament",
+ "seed_instances":["stanley cup","world series","french open","us open","ncaa finals",
+                   "super bowl","world cup","indy 500","national league pennant",
+                   "british open","kentucky derby","american league pennant","colonial cup",
+                   "rose bowl","wnba finals"],
+ "seed_ctx_pattern":["such as _","like _", "including _"],
+ "mutex_exceptions":[""],
+ "promoted_instances":[""],
+ "promoted_patterns":[""]}
+
+{"category_name":"board_game",
+ "seed_instances":["backgammon","battleship","checkers","chess","diplomacy","go","mancala",
+                   "monopoly","parcheesi","pictionary","risk","roborally","scrabble",
+                   "settlers of catan","sorry","the game of life","yahtzee"],
+ "seed_ctx_pattern":["board games such as _","board games like _", "board games including _"],
+ "mutex_exceptions":[""],
+ "promoted_instances":[""],
+ "promoted_patterns":[""]}
+
+{"category_name":"body_part",
+ "seed_instances":["arm","eye","foot","hand","leg","nose","throat","stomach","spleen",
+                   "intestines","brain","knee","thigh","heart","ear"],
+ "seed_ctx_pattern":["body parts such as _","body parts like _", "body parts including _"],
+ "mutex_exceptions":[""],
+ "promoted_instances":[""],
+ "promoted_patterns":[""]}
+
+{"category_name":"building",
+ "seed_instances":["barns","houses","apartments","churches","igloos","libraries",
+                   "museums","skyscrapers","huts","cottages","sears tower",
+                   "empire state building","trump tower" ],
+ "seed_ctx_pattern":["buildings such as _","buildings like _", "buildings including _"],
+ "mutex_exceptions":[""],
+ "promoted_instances":[""],
+ "promoted_patterns":[""]}
+
+{"category_name":"celebrity",
+ "seed_instances":[ "tom cruise","alex rodriguez","beyonce","mariah carey","robert de niro",
+                   "gisele","andy warhol","madonna","britney spears","demi moore","jessica simpson",
+                   "michael jackson","mick jagger","justin timberlake","jon stewart"],
+ "seed_ctx_pattern":["celebrities such as _","celebrities like _", "celebrities including _"],
+ "mutex_exceptions":["actor","athlete","politician","ceo"],
+ "promoted_instances":[""],
+ "promoted_patterns":[""]}
+
+{"category_name":"ceo",
+ "seed_instances":["alain belda","daniel amos","david brown","edgar bronfman","edward johnson", 
+                   "jason jiang","jeff bezos","john antioco","kirk kerkorian","richard notebaert", 
+                   "rupert murdoch","warren buffett","steve ballmer","steve jobs","eric schmidt"],
+ "seed_ctx_pattern":["ceos such as _","ceos like _", "ceos including _"],
+ "mutex_exceptions":["celebrity"],
+ "promoted_instances":[""],
+ "promoted_patterns":[""]}
+
+{"category_name":"city",
+ "seed_instances":["antwerp","baghdad","boston","brussels","chicago","frankfurt","hamburg",
+                   "havana","houston","indianapolis","london","moline","moscow","patras","pittsburgh"],
+ "seed_ctx_pattern":["cities such as _","cities like _", "cities including _"],
+ "mutex_exceptions":[""],
+ "promoted_instances":[""],
+ "promoted_patterns":[""]}
+
+{"category_name":"clothing",
+ "seed_instances":[ "coats","dresses","pants","shirts","skirts","pant suits","gowns","hats",
+                   "ear muffs","socks","mittens","shoes","underwear","belts","scarves"],
+ "seed_ctx_pattern":["clothing such as _","clothing like _", "clothing including _"],
+ "mutex_exceptions":[""],
+ "promoted_instances":[""],
+ "promoted_patterns":[""]}
+
+{"category_name":"coach",
+ "seed_instances":["bobby bowden","dave wannstedt","doc rivers","jay triano","joe paterno",
+                   "john russell","larry brown","les miles","lovie smith","mike scioscia",
+                   "mike shanahan","mike sherman","pete carroll","phil jackson","ron zook"],
+ "seed_ctx_pattern":["coaches such as _","coaches like _", "coaches including _"],
+ "mutex_exceptions":["athlete"],
+ "promoted_instances":[""],
+ "promoted_patterns":[""]}
+
+{"category_name":"company",
+ "seed_instances":["aflac","alcoa","amazon","amd","apple","berkshire hathaway","blockbuster",
+                   "focus media holding","general electric","general motors","hilton hotels",
+                   "intel","intuit","micron","microsoft"],
+ "seed_ctx_pattern":["companies such as _","companies like _", "companies including _"],
+ "mutex_exceptions":[""],
+ "promoted_instances":[""],
+ "promoted_patterns":[""]}
+
+{"category_name":"conference",
+ "seed_instances":["icml","nips","aaai","ijcai","g20","ted conference","kdd","acm","wsdm",
+                   "semantic web conference","sigir","soda","iswc","siggraph","cikm"],
+ "seed_ctx_pattern":["conferences such as _","conferences like _", "conferences including _"],
+ "mutex_exceptions":[""],
+ "promoted_instances":[""],
+ "promoted_patterns":[""]}
+
+{"category_name":"country",
+ "seed_instances":["austria","brasil","canada","egypt","france","germany","indonesia","iraq",
+                   "mexico","morocco","netherlands","new zealand","south africa","togo","united states"],
+ "seed_ctx_pattern":["countries such as _","countries like _", "countries including _"],
+ "mutex_exceptions":[""],
+ "promoted_instances":[""],
+ "promoted_patterns":[""]}
+
+{"category_name":"disease",
+ "seed_instances":["lung cancer","diabetes","breast cancer","arthritis","avian flu","meningitis",
+                   "smallpox","rubella","ebola","encephalitis","bronchitis","depression","broken bones",
+                   "hypertension","heart attacks"],
+ "seed_ctx_pattern":["diseases such as _","diseases like _", "diseases including _"],
+ "mutex_exceptions":[""],
+ "promoted_instances":[""],
+ "promoted_patterns":[""]}
+
+{"category_name":"economic_sector",
+ "seed_instances":["advertising","aerospace","agriculture","aluminum","biotechnology",
+                   "computer hardware","computer software","consumer banking","consumer electronics",
+                   "financial services","imaging","investment banking","pharmaceuticals",
+                   "semiconductors","video games"],
+ "seed_ctx_pattern":["economic sectors such as _","economic sectors like _", "economic sectors including _"],
+ "mutex_exceptions":["academic_field"],
+ "promoted_instances":[""],
+ "promoted_patterns":[""]}
+
+{"category_name":"emotion",
+ "seed_instances":["anxiety","depression","hate","joy","love","happiness","sadness","fear",
+                   "anger","frustration","glee","bliss","jealousy","enthusiasm","boredom"],
+ "seed_ctx_pattern":["emotions such as _","emotions like _", "emotions including _"],
+ "mutex_exceptions":[""],
+ "promoted_instances":[""],
+ "promoted_patterns":[""]}
+
+{"category_name":"food",
+ "seed_instances":["tomatoes","steak","ice cream","pumpkin pie","artichokes","cheddar cheese",
+                   "spinach","cookies","apples","lettuce","bell peppers","popcorn","pancakes",
+                   "yogurt","celery"],
+ "seed_ctx_pattern":["foods such as _","foods like _", "foods including _"],
+ "mutex_exceptions":[""],
+ "promoted_instances":[""],
+ "promoted_patterns":[""]}
+
+{"category_name":"fruit",
+ "seed_instances":["apples","oranges","pears","pineapples","strawberries","lemons",
+                   "watermelons","grapes","limes","kiwis"],
+ "seed_ctx_pattern":["fruits such as _","fruits like _", "fruits including _"],
+ "mutex_exceptions":[""],
+ "promoted_instances":[""],
+ "promoted_patterns":[""]}
+
+{"category_name":"furniture",
+ "seed_instances":["beds","chairs","desks","dressers","tables","couches","cabinets","sofas",
+                   "ottomans","stools","coffee tables","end tables","coffee tables","buffets",
+                   "armoires"],
+ "seed_ctx_pattern":["furnitures such as _","furnitures like _", "furnitures including _"],
+ "mutex_exceptions":[""],
+ "promoted_instances":[""],
+ "promoted_patterns":[""]}
+
+{"category_name":"hobby",
+ "seed_instances":["coin collecting","cooking","crochet","embroidery","fishing","gardening",
+                   "genealogy","hiking","hunting","knitting","music","painting","photography",
+                   "quilting","reading"],
+ "seed_ctx_pattern":["hobbies such as _","hobbies like _", "hobbies including _"],
+ "mutex_exceptions":["sport"],
+ "promoted_instances":[""],
+ "promoted_patterns":[""]}
+
+{"category_name":"kitchen_item",
+ "seed_instances":["bottle","cup","glass","knife","spoon","pot","pan","plate","fork","rolling pin",
+                   "bowl","tart pan","pizza cutter","cutting board","measuring cup","mugs"],
+ "seed_ctx_pattern":["kitchen items such as _","kitchen items like _", "kitchen items including _"],
+ "mutex_exceptions":[""],
+ "promoted_instances":[""],
+ "promoted_patterns":[""]}
+
+{"category_name":"mammal",
+ "seed_instances":["bears","cats","dogs","horses","cows","guinea pigs","rats","rabbits","zebras",
+                   "elephants","shrews","bats","giraffes","hedgehosg","armadillos"],
+ "seed_ctx_pattern":["mammals such as _","mammals like _", "mammals including _"],
+ "mutex_exceptions":[""],
+ "promoted_instances":[""],
+ "promoted_patterns":[""]}
+
+{"category_name":"movie",
+ "seed_instances":["the sound of music","star wars","the lion king","the pianist","the godfather",
+                   "the court jester","the matrix","national treasure","an american in paris","shrek",
+                   "north by northwest","raging bull","empire strikes back","the sixth sense","jaws"],
+ "seed_ctx_pattern":["movies such as _","movies like _", "movies including _"],
+ "mutex_exceptions":[""],
+ "promoted_instances":[""],
+ "promoted_patterns":[""]}
+
+{"category_name":"newspapper",
+ "seed_instances":["pittsburgh post-gazette","pittsburgh tribune","new york times","london times",
+                   "washington post","san francisco chronicle","la times","philadelphia enquirer",
+                   "new york post","herald tribune","wall street journal","chicago tribune","financial times",
+                   "toronto star","international herald tribune"],
+ "seed_ctx_pattern":["newspappers such as _","newspappers like _", "newspappers including _"],
+ "mutex_exceptions":[""],
+ "promoted_instances":[""],
+ "promoted_patterns":[""]}
+
+{"category_name":"politician",
+ "seed_instances":["barack obama","barbara boxer","barney frank","dmitry medvedev","felipe calderon",
+                   "harry reid","hillary clinton","jimmy carter","joe biden","luke ravenstahl",
+                   "nicolas sarkozy","richard daley","roger sherman","john mccain","stephen harper"],
+ "seed_ctx_pattern":["politicians such as _","politicians like _", "politicians including _"],
+ "mutex_exceptions":["celebrity"],
+ "promoted_instances":[""],
+ "promoted_patterns":[""]}
+
+{"category_name":"product",
+ "seed_instances":["accord","bounce","cascade","cheer","colgate","coolpix p6000","d40","eos 40d",
+                   "escalade","cherokee","honda fit","ipod","jeep cherokee","jetta","malibu","nintendo wii",
+                   "powershot","prius","razr","xbox 360","zune"],
+ "seed_ctx_pattern":["products such as _","products like _", "products including _"],
+ "mutex_exceptions":[""],
+ "promoted_instances":[""],
+ "promoted_patterns":[""]}
+
+{"category_name":"profession",
+ "seed_instances":["cooks","doctors","lawyers","teachers","athletes","ceos","presidents",
+                   "vice presidents","accountants","professors","managers","janitors","biologists",
+                   "chemists","pilots"],
+ "seed_ctx_pattern":["professions such as _","professions like _", "professions including _"],
+ "mutex_exceptions":[""],
+ "promoted_instances":[""],
+ "promoted_patterns":[""]}
+
+{"category_name":"professional_organization",
+ "seed_instances":["acm","ieee","aaai","aaas","nas","ohbm","ama","siam","association for computing machinery",
+                   "institute of electrical and electronics engineers","american academy of arts and sciences",
+                   "society for industrial and applied mathematics"],
+ "seed_ctx_pattern":["professional organizations such as _","professional organizations like _",
+                     "professional organizations including _"],
+ "mutex_exceptions":[""],
+ "promoted_instances":[""],
+ "promoted_patterns":[""]}
+
+{"category_name":"reptile",
+ "seed_instances":["alligators","bearded dragons","chameleons","snakes","tortoises","turtles","crocodiles",
+                   "rattlesnakes","iguanas","lizards","pythons","boas","vipers","mud turtles","geckoes"],
+ "seed_ctx_pattern":["reptiles such as _","reptiles like _", "reptiles including _"],
+ "mutex_exceptions":[""],
+ "promoted_instances":[""],
+ "promoted_patterns":[""]}
+
+{"category_name":"room",
+ "seed_instances":["kitchens","bedrooms","closets","living rooms","hallways","lobbies","offices",
+                   "attics","basements","foyers","dining rooms","pantries","bathrooms","mud rooms",
+                   "family rooms"],
+ "seed_ctx_pattern":["rooms such as _","rooms like _", "rooms including _"],
+ "mutex_exceptions":[""],
+ "promoted_instances":[""],
+ "promoted_patterns":[""]}
+
+{"category_name":"scientist",
+ "seed_instances":["albert einstein","blaise pascal","charles darwin","edward teller","enrico fermi" ,
+                   "ernest rutherford","francis crick","freeman dyson","galileo galilei","isaac newton",
+                   "max planck","niels bohr","richard feynman","robert oppenheimer","stephen hawking"],
+ "seed_ctx_pattern":["scientists such as _","scientists like _", "scientists including _"],
+ "mutex_exceptions":[""],
+ "promoted_instances":[""],
+ "promoted_patterns":[""]}
+
+{"category_name":"geometric_shape",
+ "seed_instances":["squares","ovals","triangles","hexagons","cubes","octagons","ellipses","nonogons",
+                   "pentagons","trapezoids","parallelograms"],
+ "seed_ctx_pattern":["geometric shapes such as _","geometric shapes like _", "geometric shapes including _"],
+ "mutex_exceptions":[""],
+ "promoted_instances":[""],
+ "promoted_patterns":[""]}
+
+{"category_name":"sport",
+ "seed_instances":["badminton","baseball","basketball","boxing","curling","football","hockey",
+                   "polo","skiing","soccer","swimming","tennis","volleyball","water polo","wrestling"],
+ "seed_ctx_pattern":["sports such as _","sports like _", "sports including _"],
+ "mutex_exceptions":["hobby"],
+ "promoted_instances":[""],
+ "promoted_patterns":[""]}
+
+{"category_name":"sports_equipment",
+ "seed_instances":["bats","balls","hockey pucks","pucks","hockey sticks","soccer nets",
+                   "basketball nets","football helmets","shoulder pads","goal posts","skis",
+                   "skateboards","footballs","baseballs","soccer balls","rackets"],
+ "seed_ctx_pattern":["sports equipment such as _","sports equipment like _", "sports equipment including _"],
+ "mutex_exceptions":["tool"],
+ "promoted_instances":[""],
+ "promoted_patterns":[""]}
+
+{"category_name":"sports_league",
+ "seed_instances":["nfl","national football league","afl","american football league","big east",
+                   "nba","national basketball association","pga","nhl","acc","minor league baseball",
+                   "eurocup","canadian football league","wnba","nascar"],
+ "seed_ctx_pattern":["sports leagues such as _","sports leagues like _", "sports leagues including _"],
+ "mutex_exceptions":[""],
+ "promoted_instances":[""],
+ "promoted_patterns":[""]}
+
+{"category_name":"sports_team",
+ "seed_instances":["boston celtics","bulls","chicago white sox","cleveland cavaliers","cubs",
+                   "derby county","los angeles lakers","manchester united","new york giants",
+                   "pittsburgh penguins","pittsburgh steelers","san antonio spurs","seattle seahawks",
+                   "tampa bay lightning","yankees"],
+ "seed_ctx_pattern":["sports teams such as _","sports teams like _", "sports teams including _"],
+ "mutex_exceptions":[""],
+ "promoted_instances":[""],
+ "promoted_patterns":[""]}
+
+{"category_name":"stadium",
+ "seed_instances":["pnc park","yankee stadium","wrigley field","wembley stadium","morumbi stadium",
+                   "stade de france","stadium australia","azadi stadium","camp nou","georgia dome",
+                   "qwest field","memorial stadium","fenway park","heinz field","mellon arena"],
+ "seed_ctx_pattern":["stadiums such as _","stadiums like _", "stadiums including _"],
+ "mutex_exceptions":["building"],
+ "promoted_instances":[""],
+ "promoted_patterns":[""]}
+
+{"category_name":"state_or_province",
+ "seed_instances":["florida","georgia","massachusetts","michigan","new jersey","new york","ohio",
+                   "texas","virginia","british columbia","manitoba","goa","karnataka","baja california",
+                   "quintana roo"],
+ "seed_ctx_pattern":["states such as _","states like _", "states including _"],
+ "mutex_exceptions":[""],
+ "promoted_instances":[""],
+ "promoted_patterns":[""]}
+
+{"category_name":"tool",
+ "seed_instances":["chisels","hammers","pliers","saws","screwdrivers","shovels","axes","pickaxes",
+                   "chainsaws","jackhammers","table saws","mitre saws","awls","planers","drills","sanders"],
+ "seed_ctx_pattern":["tools such as _","tools like _", "tools including _"],
+ "mutex_exceptions":["sports_equipment"],
+ "promoted_instances":[""],
+ "promoted_patterns":[""]}
+
+{"category_name":"university",
+ "seed_instances":["california institute of technology","carnegie mellon university","cmu",
+                   "colorado state university","federal university of sao carlos","harvard university",
+                   "imperial college london","massachusetts institute of technology","princeton university",
+                   "stanford university","university of oxford","university of paris sorbonne",
+                   "university of pittsburgh","university of tokyo","usc"],
+ "seed_ctx_pattern":["universities such as _","universities like _", "universities including _"],
+ "mutex_exceptions":[""],
+ "promoted_instances":[""],
+ "promoted_patterns":[""]}
+
+{"category_name":"vehicle",
+ "seed_instances":["airplanes","bicycles","cars","trains","trucks","tanks","boats","tricycles",
+                   "unicycles","scooters","motorcycles","harley davidsons","sports cars","coupes","sedans"],
+ "seed_ctx_pattern":["vehicles such as _","vehicles like _", "vehicles including _"],
+ "mutex_exceptions":[""],
+ "promoted_instances":[""],
+ "promoted_patterns":[""]}

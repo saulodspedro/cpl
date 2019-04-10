@@ -3,3 +3,4 @@
 trash/*
 *.pyc
 notebooks/.ipynb_checkpoints/*
+__pycache__/*

@@ -2,14 +2,12 @@ import pymongo
 import collections
 from cpl.cplconfig import configCPL
 
-def db_conn(db_name):
+cpl_conf = configCPL()
     
-    cpl_conf = configCPL()
-    
-    #connection to mongo database
-    conn = pymongo.MongoClient(cpl_conf.db_address)
-
-    return conn[db_name]
+#connection to mongo database
+db = pymongo.MongoClient(cpl_conf.db_address)
+db_cpl = db['db_cpl']
+db_ap = db['db_allpairs']
 
 def flatten(l):
     for el in l:

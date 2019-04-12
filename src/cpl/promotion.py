@@ -26,19 +26,21 @@ def promote_instances(category, iteration, max_promotions ,limit, T):
     #count the ocurrences of instances that co-occur with the
     #positive promoted patterns in the last iteration
     #without considering instances that were already promoted
-    pipe_pos = [{"$match":{"$and":[{"ctx_pattern":{"$in":last_promoted_patterns}},     
-                                   {"noun_phrase":{"$nin":all_promoted_instances}}]}},
+    pipe_pos = [{"$match":{"ctx_pattern":{"$in":last_promoted_patterns},
+                           "noun_phrase":{"$nin":all_promoted_instances}}},     
                 {"$group": {"_id": "$noun_phrase", "count": {"$sum": "$counter"}}}, 
                 {"$limit": limit}]  # limit is used for performance only
     
     #count the ocurrences of instances that co-occur with negative patterns
-    pipe_neg = [{"$match":{"$and":[{"ctx_pattern":{"$nin":all_promoted_patterns}},
-                                   {"ctx_pattern":{"$nin":mutex_patterns}}]}},
+    pipe_neg = [{"$match":{"ctx_pattern":{"$nin":all_promoted_patterns + mutex_patterns}}},
                 {"$group": {"_id": "$noun_phrase", "count": {"$sum": "$counter"}}}]
     
-    if list(db_ap.allpairs.aggregate(pipe_pos)):  #if at least one positive pattern was found
-        df_positive = pd.DataFrame(list(db_ap.allpairs.aggregate(pipe_pos))).set_index("_id")
-        df_negative = pd.DataFrame(list(db_ap.allpairs.aggregate(pipe_neg))).set_index("_id")
+    agg_pos = list(db_ap.allpairs.aggregate(pipe_pos))
+    agg_neg = list(db_ap.allpairs.aggregate(pipe_neg))
+    
+    if (agg_pos and agg_neg):  #if at least one positive and one negative pattern was found
+        df_positive = pd.DataFrame(agg_pos).set_index("_id")
+        df_negative = pd.DataFrame(agg_neg).set_index("_id")
         
         joined = (df_positive.join(df_negative, rsuffix='_neg')
                   .fillna(0)
@@ -75,19 +77,21 @@ def promote_patterns(category, iteration, max_promotions ,limit, T):
     #count the ocurrences of patterns that co-occur with the
     #positive promoted instances in the last iteration
     #without considering patterns that were already promoted
-    pipe_pos = [{"$match":{"$and":[{"noun_phrase":{"$in":last_promoted_instances}},   
-                                   {"ctx_pattern":{"$nin":all_promoted_patterns}}]}},
+    pipe_pos = [{"$match":{"noun_phrase":{"$in":last_promoted_instances},
+                           "ctx_pattern":{"$nin":all_promoted_patterns}}},
                 {"$group": {"_id": "$ctx_pattern", "count": {"$sum": "$counter"}}},
                 {"$limit": limit}]  # limit is used for performance only
     
     #count the ocurrences of patterns that co-occur with negative instances
-    pipe_neg = [{"$match":{"$and":[{"noun_phrase":{"$nin":all_promoted_instances}},
-                                   {"noun_phrase":{"$nin":mutex_instances}}]}},
+    pipe_neg = [{"$match":{"noun_phrase":{"$nin":all_promoted_instances + mutex_instances}}},
                 {"$group": {"_id": "$ctx_pattern", "count": {"$sum": "$counter"}}}]
     
-    if list(db_ap.allpairs.aggregate(pipe_pos)):  #if at least one positive instance was found
-        df_positive = pd.DataFrame(list(db_ap.allpairs.aggregate(pipe_pos))).set_index("_id")
-        df_negative = pd.DataFrame(list(db_ap.allpairs.aggregate(pipe_neg))).set_index("_id")
+    agg_pos = list(db_ap.allpairs.aggregate(pipe_pos))
+    agg_neg = list(db_ap.allpairs.aggregate(pipe_neg))
+    
+    if (agg_pos and agg_neg):  #if at least one positive and one negative instance was found
+        df_positive = pd.DataFrame(agg_pos).set_index("_id")
+        df_negative = pd.DataFrame(agg_neg).set_index("_id")
         
         pipe_count = [{"$match":{"ctx_pattern":{"$in":list(df_positive.index.values)}}},
                       {"$group": {"_id": "$ctx_pattern", "count": {"$sum": "$counter"}}}]

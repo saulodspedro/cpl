@@ -1,12 +1,17 @@
 import configparser
 import os
+import sys
+
+import os 
+dir_path = os.path.dirname(os.path.realpath(__file__))
+print(dir_path)
 
 class configCPL():
 
     def __init__(self):
 
         config = configparser.ConfigParser()
-        config.read('../../conf/cpl.conf')
+        config.read('../conf/cpl.conf')
 
         self.db_address = config.get('MongoDB','db_address')
         

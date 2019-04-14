@@ -11,14 +11,14 @@ def main():
     
     num_iter = cpl_conf.num_iter        # number of iterations
     max_p = cpl_conf.max_p_promotions   # max pattern promotions per iteration
-    max_i = cpl_conf.max_i_promotions   # max instance promotions per iterations
+    max_i = cpl_conf.max_i_promotions   # max instance promotions per iteration
     l = cpl_conf.limit                  # max number of positive candidates for promotion
     T = cpl_conf.T                      # multiplier of promotion threshold
     
     #load category metadata
     categories_init = db_onto.find(projection=['category_name',
-                                                       'seed_instances',
-                                                       'seed_ctx_pattern'])
+                                               'seed_instances',
+                                               'seed_ctx_pattern'])
     
     for i in range(num_iter):  # for i iterations
         

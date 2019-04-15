@@ -1,5 +1,7 @@
-from cpl.utils import flatten, db_onto, db_ap
 import pandas as pd
+from cpl.utils import flatten, db_onto, db_ap
+from cpl.sscrowd import sscrowd_scores
+
 
 def promote_seeds(categories):
     
@@ -31,6 +33,7 @@ def all_promoted_patterns():
     return df_patterns
 
 def promote_instances(category, iteration, max_promotions ,limit, T, df_all_promoted_patterns):
+ #   sscrowd_s = sscrowd_scores()
     
     last_promoted_patterns = category['promoted_patterns'][iteration-1]
     promoted_instances = list(flatten(category['promoted_instances']))
@@ -53,6 +56,9 @@ def promote_instances(category, iteration, max_promotions ,limit, T, df_all_prom
     if (pos):  #if at least one positive and one negative pattern was found
 
         df_pos = (pd.DataFrame(pos)
+  #                .join(sscrowd_s[sscrowd_s.category_name == category['category_name']]['score'], on='ctx_pattern')
+  #                .fillna(1)
+  #                .assign(counter=lambda df: (df['counter']*df['score']))
                   .groupby('noun_phrase')
                   ['counter']
                   .sum()

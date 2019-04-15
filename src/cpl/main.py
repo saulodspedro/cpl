@@ -4,12 +4,17 @@ sys.path.append('/home/saulo/projects/cpl/src')
 
 import pandas as pd
 import cpl.promotion as pr
+import argparse
 from cpl.utils import db, db_ap, db_onto, cpl_conf, flatten
 
 
 def main():
     
+#    num_iter = it+1
+#    start_iter = it
+    
     num_iter = cpl_conf.num_iter        # number of iterations
+    start_iter = cpl_conf.start_iter    # iteration to start
     max_p = cpl_conf.max_p_promotions   # max pattern promotions per iteration
     max_i = cpl_conf.max_i_promotions   # max instance promotions per iteration
     l = cpl_conf.limit                  # max number of positive candidates for promotion
@@ -20,7 +25,7 @@ def main():
                                                'seed_instances',
                                                'seed_ctx_pattern'])
     
-    for i in range(num_iter):  # for i iterations
+    for i in range(start_iter, num_iter):  # for i iterations
         
         i_start_time = time.time()
         
@@ -54,4 +59,9 @@ def main():
     db.close()
     
 if __name__ == '__main__':
+#    parser = argparse.ArgumentParser()
+#    parser.add_argument('--it', help='iteration')
+#    args = parser.parse_args()
+    
+#    main(int(args.it))
     main()

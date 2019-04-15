@@ -6,8 +6,9 @@ cpl_conf = configCPL()
     
 #connection to mongo database
 db = pymongo.MongoClient(cpl_conf.db_address)
-db_onto = db['db_cpl'].ontology
+db_onto = db['db_cpl'].ontology_ssc_3
 db_ap = db['db_allpairs'].allpairs_counts
+db_res = db['results'].ssc_3
 
 def flatten(l):
     for el in l:

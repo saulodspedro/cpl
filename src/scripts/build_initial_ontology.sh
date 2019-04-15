@@ -1,1 +1,1 @@
-mongoimport --host 200.18.98.152 --db db_cpl --collection ontology --drop --file ../data/initial_ontology.json
+mongoimport --host 200.18.98.152 --db db_cpl --collection ontology_ssc_3 --drop --file ../data/initial_ontology.json

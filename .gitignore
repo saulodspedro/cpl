@@ -2,5 +2,6 @@
 *.conf
 trash/*
 *.pyc
-notebooks/.ipynb_checkpoints/*
+*.ipynb_checkpoints/
 __pycache__/*
+*.csv
